@@ -28,14 +28,16 @@ export default function App() {
       <Table variant="dark">
         <tbody>
           <tr>
+            <th>S.N</th>
             <th>Name</th>
             <th>Age</th>
             <th>Hobby</th>
             <th>Address</th>
           </tr>
           {
-            person.map(data => (
-              <tr>
+            person.map((data, key) => (
+              <tr key={key + 1}>
+                <td>{key}</td>
                 <td>{data.name}</td>
                 <td>{data.age}</td>
                 <td>{data.hobby}</td>
