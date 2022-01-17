@@ -5,6 +5,8 @@ import { increment, decrement } from './actions/index';
 
 const App = () => {
   const myState = useSelector((state) => state.changeNum);
+
+  // passing useDispatch to trigger my action
   const dispatch = useDispatch();
 
 
