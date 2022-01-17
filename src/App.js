@@ -13,9 +13,9 @@ const App = () => {
       <div className="container">
         <h1>Increment Decrement</h1>
 
-        <button className="btn btn-danger" onClick={() => dispatch(decrement())}>-</button>
+        <button className="btn btn-danger" onClick={() => dispatch(decrement(3))}>-</button>
         <input type="number" value={myState} />
-        <button className="btn btn-success" onClick={() => dispatch(increment())}>+</button>
+        <button className="btn btn-success" onClick={() => dispatch(increment(5))}>+</button>
       </div >
     </>
   )
